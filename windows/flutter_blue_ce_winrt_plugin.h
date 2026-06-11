@@ -17,7 +17,7 @@
 #include <atomic>
 #include <mutex>
 
-namespace flutter_blue_plus_winrt {
+namespace flutter_blue_ce_winrt {
 
 struct SubscribedCharacteristic {
     winrt::Windows::Foundation::IInspectable characteristic = nullptr;
@@ -200,6 +200,6 @@ class FlutterBluePlusWinrtPlugin : public flutter::Plugin {
   void ClearDeviceResources(std::string remote_id);
 };
 
-}  // namespace flutter_blue_plus_winrt
+}  // namespace flutter_blue_ce_winrt
 
 #endif  // FLUTTER_PLUGIN_FLUTTER_BLUE_PLUS_WINRT_PLUGIN_H_

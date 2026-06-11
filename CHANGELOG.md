@@ -1,3 +1,7 @@
+## 2.3.8+ce.1
+* Rename the forked package to `flutter_blue_ce_winrt`.
+* Align package versioning with the main `flutter_blue_ce` fork.
+
 ## 0.0.18
 * Fix multithreading & connection stability (#5)
 
@@ -55,7 +59,7 @@
 * Fix: properly clear characteristic and descriptor caches upon disconnection.
 
 ## 0.0.2
-* Fix: a version issue with `flutter_blue_plus_platform_interface` #1
+* Fix: a version issue with `flutter_blue_ce_platform_interface` #1
 
 ## 0.0.1
 * Initial release.

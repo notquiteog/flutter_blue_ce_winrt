@@ -1,6 +1,6 @@
 #pragma warning(disable : 4819)
 
-#include "flutter_blue_plus_winrt_plugin.h"
+#include "flutter_blue_ce_winrt_plugin.h"
 
 #include <flutter/method_channel.h>
 #include <flutter/plugin_registrar_windows.h>
@@ -33,7 +33,7 @@ using namespace Windows::Devices::Bluetooth::GenericAttributeProfile;
 using namespace Windows::Devices::Enumeration;
 using namespace Windows::Devices::Radios;
 
-namespace flutter_blue_plus_winrt {
+namespace flutter_blue_ce_winrt {
 
 // Debug Logging Helper
 void Log(const char* format, ...) {
@@ -469,7 +469,7 @@ void FlutterBluePlusWinrtPlugin::RegisterWithRegistrar(
     auto* plugin_pointer = plugin.get();
 
     plugin_pointer->channel_ = std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-        registrar->messenger(), "flutter_blue_plus/methods",
+        registrar->messenger(), "flutter_blue_ce/methods",
         &flutter::StandardMethodCodec::GetInstance());
 
     plugin_pointer->channel_->SetMethodCallHandler(
@@ -1870,4 +1870,4 @@ void FlutterBluePlusWinrtPlugin::HandleMethodCall(const flutter::MethodCall<flut
     result->NotImplemented();
 }
 
-}  // namespace flutter_blue_plus_winrt
+}  // namespace flutter_blue_ce_winrt

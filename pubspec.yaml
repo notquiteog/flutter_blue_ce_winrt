@@ -10,7 +10,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_blue_plus_platform_interface: ">=9.0.0"
+  flutter_blue_plus_platform_interface:
+    git:
+      url: https://github.com/notquiteog/flutter_blue_plus_platform_interface.git
+      ref: main
 
 dev_dependencies:
   flutter_test:

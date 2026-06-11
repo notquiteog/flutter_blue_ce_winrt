@@ -11,5 +11,13 @@ so you do not need to add it to your `pubspec.yaml`.
 However, if you `import` this package to use any of its APIs directly, you
 should add it to your `pubspec.yaml` as usual.
 
-[1]: https://pub.dev/packages/flutter_blue_ce
+```yaml
+dependencies:
+  flutter_blue_ce_winrt:
+    git:
+      url: https://github.com/notquiteog/flutter_blue_ce_winrt.git
+      ref: main
+```
+
+[1]: https://github.com/notquiteog/flutter_blue_ce
 [2]: https://flutter.dev/to/endorsed-federated-plugin

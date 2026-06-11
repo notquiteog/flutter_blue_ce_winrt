@@ -1,4 +1,4 @@
-#include "include/flutter_blue_ce_winrt/flutter_blue_ce_plugin.h"
+#include "include/flutter_blue_ce_winrt/flutter_blue_plus_plugin.h"
 
 #include <flutter/plugin_registrar_windows.h>
 
